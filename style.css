@@ -1,0 +1,105 @@
+*{ /*définit le style global sur l'intégralité de la page peu importe le navigateur(selecteur universel) */
+    margin: 0; /* margin = marge extérieure à la boite*/
+    padding: 0; /* margin = marge intérieure à la boite*/
+    box-sizing: border-box; /* indique que l'on va inclure les marges internes et bordure dans la taille des parents*/
+    font-family: poppins;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        color: rgb(255, 132, 0);
+    }
+    
+
+    .header{
+        display: flex; 
+        display: none;
+        justify-content: space-around;
+    }
+    nav ul li{
+        display: inline;
+        margin-right: 20px;
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    
+    }
+    
+    .logo{
+        width: 10em;
+        height: 10em;
+    }
+    
+    
+    header{
+        background-color: rgb(144, 218, 226);
+      }
+    
+    .menu {
+     /* Pour que le menu reste en place quand on scroll */
+    position: fixed;
+    /* Pour que le menu ne soit pas sur le texte et que ce dernier puisse être sélectionné */
+    width: 0px;
+    }
+
+    #hamburger {
+      /* Pour que la checkbox ne s'affiche pas */
+      display: none;
+    }
+
+    #hamburger-logo {
+      /* Pour que le curseur soit un pointeur */
+      cursor: pointer;
+      background: black;
+      width: 200px;
+      display: block;
+      color: white;
+      /* Pour que le menu hamburger s'affiche toujours */
+      text-align: right;
+      /* Pour que le menu hamburger soit "rangé" par défaut */
+      transform: translateX(-168px);
+      padding: 10px;
+    }
+    
+    .burgerMenu {
+      display: flex;
+      flex-direction: column;
+      background: black;
+      overflow: hidden;
+      width: 200px;
+      /* Pour que les liens soient "rangés" par défaut */
+      transform: translateX(-200px);
+    }
+    
+    #hamburger-logo,
+    .burgerMenu {
+      /* Pour qu'il y ait une animation */
+      transition: 0.7s;
+    }
+    
+    /* Lorsque #hamburger est coché, le #hamburger-logo et le nav qui sont dans le même parent changent d'état (ouvert-fermé) */
+    #hamburger:checked ~ #hamburger-logo,
+    #hamburger:checked ~ .burgerMenu {
+      /* Changement de la position pour afficher les menus */
+      transform: translate(0);
+    }
+    
+    .burgerMenu a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+    
+    .burgerMenu a:hover {
+      background: #444;
+    }
+    
+    .titreH1{
+        display: flex;
+        justify-content: center;
+    }
+

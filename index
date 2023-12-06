@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+
+
+
+<body><!--inserer un commentaire-->
+
+    <header>
+        <div class="header">
+            <div>
+                <img class="logo" src="IMAGES/logo.png" alt="logo">
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="#"></a>Accueil</li>
+                        <li><a href="NAVIGATION/a propos.html">A propos</a></li>
+                        <li><a href="#"></a> Contact </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+       
+        <div class="menu">
+            <!-- Utilisation d'une checkbox -->
+            <input type="checkbox" id="hamburger">
+            <!-- Label de la checkbox -->
+            <label id="hamburger-logo" for="hamburger">☰</label>
+            <!-- Le reste du menu -->
+            <nav class="burgerMenu">
+              <a href="#">Page d'accueil</a>
+              <a href="#">Information</a>
+              <a href="#">À propos</a>
+              <a href="#">Contact</a>
+            </nav>
+          </div>
+                            
+            
+        </div>
+
+    </header>
+
+
+    <main>
+        <h1 class="titreH1">
+        Juste un test
+        </h1>
+    </main>
+    
+</body>    
